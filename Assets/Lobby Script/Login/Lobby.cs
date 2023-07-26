@@ -23,7 +23,7 @@ public class Lobby : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        SceneManager.LoadScene(1);
+        PhotonNetwork.LoadLevel(1);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
