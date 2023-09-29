@@ -43,6 +43,13 @@ MonoBehaviour:
   - ChangeRight
   - Destroy
   - Shoot
+  - MoveLeft
+  - DestroyBullet
+  - HealthUpdate
+  - Die
+  - Revive
+  - Animation
+  - SpawnEnemy
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

@@ -10,6 +10,23 @@ public class Lobby : MonoBehaviourPunCallbacks
 {
     public InputField createRoom;
     public InputField joinRoom;
+    public InputField nickName;
+
+    public GameObject nickObject;
+
+    private void Start()
+    {
+        if(PhotonNetwork.NickName != "")
+        {
+            nickObject.SetActive(false);
+        }
+    }
+
+    public void GetNickname()
+    {
+        PhotonNetwork.NickName = nickName.text;
+        nickObject.SetActive(false);
+    }
 
     public void JoinRoomBt()
     {
